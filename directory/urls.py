@@ -18,4 +18,6 @@ from . import views
 
 urlpatterns = [
     url(r'^about', views.about, name='about'),
+    url(r'^news_factory', views.news_factory, name='news_factory'),
+    url(r'^api/user/(?P<id>\w+)/$', views.User.as_view()),
 ]
